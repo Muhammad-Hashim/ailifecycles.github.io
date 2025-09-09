@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>NLP Robot</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F5F8FA" x="0" y="0" width="180" height="180" rx="10"></rect>
+        <g transform="translate(30.000000, 15.000000)">
+            <!-- Robot Head -->
+            <rect fill="#3182CE" x="40" y="0" width="40" height="40" rx="5"></rect>
+            <!-- Robot Eyes -->
+            <circle fill="#FFFFFF" cx="55" cy="15" r="5"></circle>
+            <circle fill="#FFFFFF" cx="75" cy="15" r="5"></circle>
+            <circle fill="#000000" cx="55" cy="15" r="2"></circle>
+            <circle fill="#000000" cx="75" cy="15" r="2"></circle>
+            <!-- Robot Mouth - Speech Symbol -->
+            <rect fill="#FFFFFF" x="50" y="25" width="20" height="10" rx="5"></rect>
+            <path d="M55,30 C58.3137085,30 61,27.3137085 61,24" stroke="#FFFFFF" stroke-width="2"></path>
+            <!-- Robot Antennas -->
+            <rect fill="#3182CE" x="57.5" y="-10" width="5" height="10"></rect>
+            <circle fill="#FF5733" cx="60" cy="-10" r="5"></circle>
+            <!-- Robot Body -->
+            <rect fill="#4299E1" x="35" y="45" width="50" height="60" rx="5"></rect>
+            <!-- Robot Control Panel - Text Symbols -->
+            <rect fill="#FFFFFF" x="45" y="55" width="30" height="20" rx="2"></rect>
+            <rect fill="#3182CE" x="50" y="60" width="20" height="2"></rect>
+            <rect fill="#3182CE" x="50" y="65" width="15" height="2"></rect>
+            <rect fill="#3182CE" x="50" y="70" width="10" height="2"></rect>
+            <!-- Robot Arms -->
+            <rect fill="#3182CE" x="20" y="50" width="15" height="5" rx="2"></rect>
+            <rect fill="#3182CE" x="85" y="50" width="15" height="5" rx="2"></rect>
+            <!-- Robot Legs -->
+            <rect fill="#3182CE" x="45" y="105" width="10" height="30" rx="2"></rect>
+            <rect fill="#3182CE" x="65" y="105" width="10" height="30" rx="2"></rect>
+            <!-- Robot Feet -->
+            <rect fill="#2D3748" x="40" y="135" width="20" height="5" rx="2"></rect>
+            <rect fill="#2D3748" x="60" y="135" width="20" height="5" rx="2"></rect>
+            <!-- NLP Symbols -->
+            <circle fill="#2B6CB0" cx="25" cy="95" r="10"></circle>
+            <text x="19" y="98" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">ABC</text>
+            <circle fill="#2B6CB0" cx="95" cy="95" r="10"></circle>
+            <text x="89" y="98" fill="#FFFFFF" font-family="Arial" font-weight="bold" font-size="8">123</text>
+        </g>
+    </g>
+</svg>

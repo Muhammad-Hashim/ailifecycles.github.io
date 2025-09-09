@@ -1,0 +1,383 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 8rem 0 6rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  color: #1a1a1a;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroLabel {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.025em;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.trustedBy {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.trustedByText {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Button overrides to match LangChain style */
+.heroButtons .button--primary {
+  background: #111827;
+  border: 1px solid #111827;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.heroButtons .button--primary:hover {
+  background: #374151;
+  border-color: #374151;
+  transform: translateY(-1px);
+}
+
+.heroButtons .button--outline {
+  background: transparent;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.heroButtons .button--outline:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 6rem 0 4rem;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.125rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 4rem 0 3rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .heroButtons .button--primary,
+  .heroButtons .button--outline {
+    padding: 0.625rem 1.5rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Ecosystem Showcase Styles */
+.ecosystemSection {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.ecosystemContent {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ecosystemTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+.ecosystemSubtitle {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 4rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toolsShowcase {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.toolsOrbit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.toolItem {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  top: 50%;
+  left: 50%;
+  transform: 
+    translate(-50%, -50%)
+    rotate(var(--rotation))
+    translateY(-160px)
+    rotate(calc(-1 * var(--rotation)));
+  opacity: 0.8;
+}
+
+.toolItem:hover,
+.toolItemActive {
+  transform: 
+    translate(-50%, -50%)
+    rotate(var(--rotation))
+    translateY(-180px)
+    rotate(calc(-1 * var(--rotation)))
+    scale(1.15);
+  border-color: var(--tool-color);
+  opacity: 1;
+  z-index: 2;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.toolIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.toolItemActive .toolIcon {
+  transform: scale(1.2);
+}
+
+.toolName {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.centerLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+}
+
+.logoIcon {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.logoText {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Responsive design for ecosystem showcase */
+@media screen and (max-width: 996px) {
+  .ecosystemSection {
+    padding: 4rem 0;
+  }
+  
+  .ecosystemTitle {
+    font-size: 2rem;
+  }
+  
+  .toolsShowcase {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .toolItem {
+    width: 70px;
+    height: 70px;
+    transform: 
+      translate(-50%, -50%)
+      rotate(var(--rotation))
+      translateY(-140px)
+      rotate(calc(-1 * var(--rotation)));
+  }
+  
+  .toolItem:hover,
+  .toolItemActive {
+    transform: 
+      translate(-50%, -50%)
+      rotate(var(--rotation))
+      translateY(-155px)
+      rotate(calc(-1 * var(--rotation)))
+      scale(1.1);
+  }
+  
+  .centerLogo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ecosystemSection {
+    padding: 3rem 0;
+  }
+  
+  .ecosystemTitle {
+    font-size: 1.75rem;
+  }
+  
+  .toolsShowcase {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .toolItem {
+    width: 60px;
+    height: 60px;
+    transform: 
+      translate(-50%, -50%)
+      rotate(var(--rotation))
+      translateY(-120px)
+      rotate(calc(-1 * var(--rotation)));
+  }
+  
+  .toolItem:hover,
+  .toolItemActive {
+    transform: 
+      translate(-50%, -50%)
+      rotate(var(--rotation))
+      translateY(-130px)
+      rotate(calc(-1 * var(--rotation)))
+      scale(1.05);
+  }
+  
+  .toolIcon {
+    font-size: 1.2rem;
+  }
+  
+  .toolName {
+    font-size: 0.65rem;
+  }
+  
+  .centerLogo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logoIcon {
+    font-size: 1.5rem;
+  }
+  
+  .logoText {
+    font-size: 0.75rem;
+  }
+}

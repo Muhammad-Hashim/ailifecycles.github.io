@@ -1,0 +1,8 @@
+{
+  "label": "Computer Vision Lifecycle",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Computer Vision lifecycle from image data collection to model deployment."
+  }
+}

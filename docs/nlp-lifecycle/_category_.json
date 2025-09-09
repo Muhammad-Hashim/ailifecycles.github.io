@@ -1,0 +1,8 @@
+{
+  "label": "NLP Lifecycle",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Natural Language Processing lifecycle from problem definition to deployment."
+  }
+}

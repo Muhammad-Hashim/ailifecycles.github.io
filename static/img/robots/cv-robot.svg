@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Computer Vision Robot</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F5F8FA" x="0" y="0" width="180" height="180" rx="10"></rect>
+        <g transform="translate(30.000000, 15.000000)">
+            <!-- Robot Head -->
+            <rect fill="#DD6B20" x="40" y="0" width="40" height="40" rx="5"></rect>
+            <!-- Robot Eyes - Camera Lens -->
+            <circle fill="#FFFFFF" cx="60" cy="15" r="10"></circle>
+            <circle fill="#000000" cx="60" cy="15" r="7"></circle>
+            <circle fill="#3182CE" cx="60" cy="15" r="3"></circle>
+            <circle fill="#FFFFFF" cx="58" cy="13" r="1"></circle>
+            <!-- Camera Focus Lines -->
+            <line x1="45" y1="15" x2="55" y2="15" stroke="#FFFFFF" stroke-width="1"></line>
+            <line x1="65" y1="15" x2="75" y2="15" stroke="#FFFFFF" stroke-width="1"></line>
+            <line x1="60" y1="0" x2="60" y2="10" stroke="#FFFFFF" stroke-width="1"></line>
+            <line x1="60" y1="20" x2="60" y2="30" stroke="#FFFFFF" stroke-width="1"></line>
+            <!-- Robot Antennas -->
+            <rect fill="#DD6B20" x="57.5" y="-10" width="5" height="10"></rect>
+            <circle fill="#FF5733" cx="60" cy="-10" r="5"></circle>
+            <!-- Robot Body -->
+            <rect fill="#ED8936" x="35" y="45" width="50" height="60" rx="5"></rect>
+            <!-- Robot Control Panel - Vision Display -->
+            <rect fill="#000000" x="45" y="55" width="30" height="20" rx="2"></rect>
+            <!-- Display Grid Lines -->
+            <line x1="45" y1="65" x2="75" y2="65" stroke="#3182CE" stroke-width="1"></line>
+            <line x1="60" y1="55" x2="60" y2="75" stroke="#3182CE" stroke-width="1"></line>
+            <circle fill="#FF5733" cx="60" cy="65" r="3"></circle>
+            <!-- Robot Arms -->
+            <rect fill="#DD6B20" x="20" y="50" width="15" height="5" rx="2"></rect>
+            <rect fill="#DD6B20" x="85" y="50" width="15" height="5" rx="2"></rect>
+            <!-- Robot Legs -->
+            <rect fill="#DD6B20" x="45" y="105" width="10" height="30" rx="2"></rect>
+            <rect fill="#DD6B20" x="65" y="105" width="10" height="30" rx="2"></rect>
+            <!-- Robot Feet -->
+            <rect fill="#2D3748" x="40" y="135" width="20" height="5" rx="2"></rect>
+            <rect fill="#2D3748" x="60" y="135" width="20" height="5" rx="2"></rect>
+            <!-- CV Symbols -->
+            <circle fill="#C05621" cx="25" cy="95" r="10"></circle>
+            <rect fill="#FFFFFF" x="20" y="90" width="10" height="10" rx="2"></rect>
+            <circle fill="#C05621" cx="95" cy="95" r="10"></circle>
+            <polygon fill="#FFFFFF" points="95 90 100 95 95 100 90 95"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "label": "Generative AI Lifecycle",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Generative AI lifecycle for LLMs, diffusion models, and other generative systems."
+  }
+}
